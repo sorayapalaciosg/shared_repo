@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web 3.0</title>
+	
+	<script>
+function init() {
+  var arrImages = new Array(3);
+  arrImages[0] = document.getElementById("image1");
+  arrImages[1] = document.getElementById("image2");
+  arrImages[2] = document.getElementById("image3");
+  var objOutput = document.getElementById("output");
+  var strHtml = "<ul>";
+  for (var i = 0; i < arrImages.length; i++) {
+    strHtml += "<li>image" + (i+1) +
+            ": height=" + arrImages[i].height +
+            ", width=" + arrImages[i].width +
+            ", style.height=" + arrImages[i].style.height +
+            ", style.width=" + arrImages[i].style.width +
+            "<\/li>";
+  }
+  strHtml += "<\/ul>";
+  objOutput.innerHTML = strHtml;
+}
+</script>
+	
+  </head>
+  <body>
+    <h1>Web 3.0</h1>
+
+<p>Ciclo de la Web 3.0
+  <img id="image1" src="https://lh4.googleusercontent.com/eaTNMU4P4aKTuABJspnW8GdjaykWcqz5Y-jGWu7W0Ap7MhmKCQV37ZqDfIKZ0t1GWqKPjBlbV0O8fRmbTJGsvCJfjL9-Hmu_bE4FH6XpQeiOmk44Lp0">
+</p>
+
+<p>Reestructurando imagen
+  <img id="image2"
+       src="https://lh4.googleusercontent.com/eaTNMU4P4aKTuABJspnW8GdjaykWcqz5Y-jGWu7W0Ap7MhmKCQV37ZqDfIKZ0t1GWqKPjBlbV0O8fRmbTJGsvCJfjL9-Hmu_bE4FH6XpQeiOmk44Lp0"
+       height="50" width="500">
+</p>
+
+<p>Image 3: no height, width, but style="height: 50px; width: 500px;"
+  <img id="image3"
+       src="https://lh4.googleusercontent.com/eaTNMU4P4aKTuABJspnW8GdjaykWcqz5Y-jGWu7W0Ap7MhmKCQV37ZqDfIKZ0t1GWqKPjBlbV0O8fRmbTJGsvCJfjL9-Hmu_bE4FH6XpQeiOmk44Lp0"
+       style="height: 50px; width: 500px;">
+</p>
+
+<div id="output"> </div>
+
+    <img src="https://allthatclicks.com/wp-content/uploads/2009/02/webevolve.jpg" style="width: 100%;height: auto;"/>
+    <p>La Web 3.0 es una web extendida, dotada de mayor significado donde cualquier usuario podra encontrar respuestas a sus preguntas de forma mas rapida.</p>
+    <h3>Funciones y caracteristicas:</h3>
+    
+    <ul>
+      <li>Inteligencia Artificial</li>
+      <li>Mineria de datos</li>
+      <li>Smartphones</li>
+      <li>Aplicaciones Moviles</li>
+    </ul>
+
+    <p>El analisis de estas caracteristicas y funciones dan como resultado una mejor experiencia al usuario, al interactuar diariamente</p>
+
+    <h3>Impacto en estrategias de marketing</h3>
+    <p>Se personaliza el producto a la medida del usuario, y conforme a su interaccion con las aplicaciones.</p>
+    <p>Se da a conocer nuevos productos conforme a las historiales de busquedas</p>
+
+    <a href="https://prezi.com/view/OBS6n4nWZ06RwJw8tSWn">Click aqui para ver presentacion</a>
+
+
+  </body>
+</html>
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'KPNLAMFLCJBOKMEOAMNKHCMLGFIFDGNCIPPPCLNNDFHNDNKKHGNCODCJIOEIBOCBIHIBDJIEAADOHBNLOAAADIAIAAOLMMODIBJHLKCDJDAMAKLKDGBBLBLPIOJJNLBG',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0479590389aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>
